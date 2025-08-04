@@ -1,0 +1,1 @@
+Para usar o repositório, será necessário possuir .Net usando uma versão > .5
