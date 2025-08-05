@@ -6,7 +6,7 @@ int qtd = 3;
 
 // variaveis de entrada
 int idade;
-string? nome;
+string nome;
 
 // vetores para armazenamento dos registros
 int[] idades = new int[qtd];
@@ -22,8 +22,8 @@ for (int i = 0; i <= qtd; i++)
     nome = Console.ReadLine();
 
     Console.WriteLine("Idade : ");
-    idade = int.Parse(Console.ReadLine() ?? "0"); // cast: trocando o tipo do valor
-    nomes[i] = nome ?? "Sem nome";
+    idade = int.Parse(Console.ReadLine()); // cast: trocando o tipo do valor
+    nomes[i] = nome;
     idades[i] = idade;
     Console.ReadKey();
 }
