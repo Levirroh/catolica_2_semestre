@@ -14,25 +14,24 @@ string[] nomes = new string[qtd];
 
 
 // seção de cadastro de alunos
-for (int i = 0; i <= qtd; i++)
+for (int i = 0; i < qtd; i++)
 {
     Console.Clear();
     Console.WriteLine($"Cadastrando registro Nº {i + 1}");
-    Console.WriteLine("Nome  : ");
+    Console.Write("Nome  : ");
     nome = Console.ReadLine();
 
-    Console.WriteLine("Idade : ");
+    Console.Write("Idade : ");
     idade = int.Parse(Console.ReadLine()); // cast: trocando o tipo do valor
     nomes[i] = nome;
     idades[i] = idade;
-    Console.ReadKey();
 }
 
 //seção de listagem
 Console.WriteLine("Listagem de alunos");
 Console.WriteLine("------------------");
 
-for (int i = 0; i <= qtd; i++)
+for (int i = 0; i < qtd; i++)
 {
     Console.WriteLine($"Mostrando registro Nº {i + 1}:");
     Console.WriteLine($"Nome  : {nomes[i]} \t|\t {idades[i]}");
