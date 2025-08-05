@@ -18,10 +18,10 @@ for (int i = 0; i <= qtd; i++)
 {
     Console.Clear();
     Console.WriteLine($"Cadastrando registro Nº {i + 1}");
-    Console.Write("Nome  : ");
+    Console.WriteLine("Nome  : ");
     nome = Console.ReadLine();
 
-    Console.Write("Idade : ");
+    Console.WriteLine("Idade : ");
     idade = int.Parse(Console.ReadLine() ?? "0"); // cast: trocando o tipo do valor
     nomes[i] = nome ?? "Sem nome";
     idades[i] = idade;
