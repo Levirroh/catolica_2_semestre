@@ -1,0 +1,15 @@
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\bin\Debug\net9.0\Boletim.Console.exe
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\bin\Debug\net9.0\Boletim.Console.deps.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\bin\Debug\net9.0\Boletim.Console.runtimeconfig.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\bin\Debug\net9.0\Boletim.Console.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\bin\Debug\net9.0\Boletim.Console.pdb
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\Boletim.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\Boletim.Console.AssemblyInfoInputs.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\Boletim.Console.AssemblyInfo.cs
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\Boletim.Console.csproj.CoreCompileInputs.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\Boletim.Console.sourcelink.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\Boletim.Console.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\refint\Boletim.Console.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\Boletim.Console.pdb
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\Boletim.Console.genruntimeconfig.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\BoletimEscolar\Boletim.Console\obj\Debug\net9.0\ref\Boletim.Console.dll
