@@ -29,6 +29,9 @@ Se estiver em outra pasta o dotnet:
 \"Program Files"\dotnet\dotnet
 --
 
+path = c:\program files\dotnet;%path%
+
+
 ````markdown
 # 💻 Setup do Ambiente de Programação em C# com VS Code no Windows
 
