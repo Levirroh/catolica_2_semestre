@@ -113,6 +113,7 @@ static void calculos_livros(int qtd_livro, decimal preco_livro, int[] qtd_livros
 //relatório
 static void mostrar_livros(string nome_livro, int qtd_livro, decimal preco_livro, string sair, string confirmar_livro, string[] nome_livros_inseridos, int[] qtd_livros_inseridos, decimal[] preco_livros_inseridos, int livro, decimal valor_total, decimal[] preco_total_livros_inseridos, int qtd_total_livros)
 {
+    Console.Clear();
     //mostrando livros inseridos até agora
     Console.WriteLine("Os livros até agora inseridos foram");
 
