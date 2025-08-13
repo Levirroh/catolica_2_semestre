@@ -1,0 +1,15 @@
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\bin\Debug\net9.0\ex_02.exe
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\bin\Debug\net9.0\ex_02.deps.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\bin\Debug\net9.0\ex_02.runtimeconfig.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\bin\Debug\net9.0\ex_02.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\bin\Debug\net9.0\ex_02.pdb
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ex_02.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ex_02.AssemblyInfoInputs.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ex_02.AssemblyInfo.cs
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ex_02.csproj.CoreCompileInputs.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ex_02.sourcelink.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ex_02.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\refint\ex_02.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ex_02.pdb
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ex_02.genruntimeconfig.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\Projetos_poo\Exercicios\Aula_02\ex_02\ex_02\obj\Debug\net9.0\ref\ex_02.dll
