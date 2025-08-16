@@ -119,6 +119,7 @@ static void geracao_de_relatorio(string[] nomes_atletas, int[,] pontuacoes_atlet
     Console.WriteLine($"Média geral da competição: {media_total}");
     Console.WriteLine($"Percentual de atletas aprovados: {percentual_aprovados}%");
     Console.WriteLine("---------------------------------");
+    Console.WriteLine("\n\n Aperte qualquer tecla para finalizar.");
     Console.ReadKey();
     
 }
