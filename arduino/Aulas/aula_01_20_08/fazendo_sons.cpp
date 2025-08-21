@@ -22,6 +22,9 @@ void setup()
 
 void loop()
 {
+    analogWrite(azul_1, 0);
+    analogWrite(verde_1, 0);
+    analogWrite(vermelho_1, 255);
 	analogWrite(vermelho, 0);
   	analogWrite(azul, 0);
   	analogWrite(verde, 255);
@@ -87,20 +90,22 @@ void loop()
     analogWrite(vermelho_1, 0); // reiniciando todos eles
 
   	analogWrite(vermelho_1, 255);
+    analogWrite(verde_1, 255);
  	delay(400);
     tone(buzz, 300, 200);
     analogWrite(vermelho_1, 0);
+    analogWrite(verde_1, 0);
    	delay(200);
   	analogWrite(vermelho_1, 255);
+    analogWrite(verde_1, 255);
     delay(600);
     tone(buzz, 300, 200);
  	analogWrite(vermelho_1, 0);
-   	delay(200);
+   	 analogWrite(verde_1, 0);
+	delay(200);
   	analogWrite(vermelho_1, 255);  
-  	delay(600);
+  	analogWrite(verde_1, 255);
+	delay(600);
     tone(buzz, 300, 500);
-     analogWrite(vermelho_1, 0);
-
     delay(600);
-
 }
