@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Boletim.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d034f68b92b36ace1523f82871f3604c37a3ae75")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd458c6cc170cb58378b23816c72f861faeb6349")]
 [assembly: System.Reflection.AssemblyProductAttribute("Boletim.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Boletim.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
