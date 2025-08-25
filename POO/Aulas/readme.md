@@ -16,3 +16,18 @@ Ela utiliza Objetos:
 
 Exemplo:
     Características do bolo: forma - redonda, peso - 300g, sabor - chocolate com baunilha, cobertura - chocolate, etc.
+
+Todas características possuem uma chave e valor:
+Classe - Valor:
+Ex: Cor de cabelo - Loiro
+
+A palavra característica, em uma Classe na POO, vai possuir o nome "propriedade". Algo inerente da classe.
+
+
+A Classe também descreve, além das Propriedades, descreve Ações, as ações serão o que cada um executa, por exemplo, acelerar, freiar, buzina, capota. As ações serão verbos.
+
+As ações serão, na POO, chamadas de Métodos.
+
+A Classe descreve o método e as propriedades, quem a executa é o objeto em si.
+
+

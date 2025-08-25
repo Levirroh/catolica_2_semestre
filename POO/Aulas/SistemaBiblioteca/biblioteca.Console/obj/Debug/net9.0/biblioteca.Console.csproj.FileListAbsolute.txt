@@ -1,0 +1,15 @@
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.exe
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.deps.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.runtimeconfig.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\bin\Debug\net9.0\biblioteca.Console.pdb
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.AssemblyInfoInputs.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.AssemblyInfo.cs
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.csproj.CoreCompileInputs.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.sourcelink.json
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\refint\biblioteca.Console.dll
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.pdb
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\biblioteca.Console.genruntimeconfig.cache
+C:\Users\johann.ruth\Desktop\catolica_2_semestre\POO\Aulas\SistemaBiblioteca\biblioteca.Console\obj\Debug\net9.0\ref\biblioteca.Console.dll
