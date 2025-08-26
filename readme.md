@@ -1,3 +1,7 @@
+Documento de Redes:
+https://docs.google.com/document/d/1Aj3GHShWowaXs-slht6JfZdH7kybjzqXGG-QnvThD90/edit?usp=sharing
+
+
 Para usar o repositório, será necessário possuir .Net usando uma versão > .5;
 
 -- Biblioteca é um exemplo de como criar sem usar a inteface de comando
