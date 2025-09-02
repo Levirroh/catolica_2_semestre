@@ -1,0 +1,54 @@
+﻿//backup do program.cd 1
+List<Livro> livros = new List<Livro>();
+
+Console.Clear();
+Console.WriteLine("---=== Sistema de Biblioteca ===---");
+
+//cria 2 objetos de livros
+
+//tipos primitivos: int, string..
+
+//tipos construídos
+//podem ser construídos das seguintes formas:
+
+//a mais recomendada
+//Livro livro1 = new Livro("123", "O Senhor dos Aneis", "JRR Tolkien", 2015, 1247); // obj livro1
+livros.Add(new Livro("123", "O Senhor dos Aneis", "JRR Tolkien", 2015, 1247));
+
+//Livro livro2 = new Livro("437", "Ilíada", "Homero", 2020, 421); // obj livro2
+livros.Add(new Livro("437", "Ilíada", "Homero", 2020, 421));
+
+
+//Se não possuir constructor pode ser assim:
+// Livro livro2 = new Livro("437"); // obj livro2
+// //aqui foi instanciado ou criado uma instância da classe livro
+// livro2.isbn = "437";
+// livro2.titulo = "Ilíada";
+// livro2.autor = "Homero";
+// livro2.anoPublicacao = 2020;
+// livro2.nPagina = 421;
+
+// //mostra na tela os dados do objeto livro1
+// Console.WriteLine("Dados do livro1: ");
+// livros[0].ImprimirDados();
+
+// Console.WriteLine("\n ====----====----====----====---- \n");
+
+// Console.WriteLine("Dados do livro2: ");
+// livros[1].ImprimirDados();
+
+// Console.WriteLine("====----====----====----====----");
+
+
+
+for (int i = 0; i < livros.Count; i++)
+{
+    livros[i].ImprimirDados();
+    Console.WriteLine("====----====----====----====----");
+    Console.WriteLine("");
+    
+    //algum outro comando
+
+}
+
+
