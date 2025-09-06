@@ -7,7 +7,8 @@ using namespace std;
 
 int fibonacci(int n){
 	
-	if(n <= 1) return n; // créditos ao VH, pensou em tudo
+	//tarefa: fazer 3 testes de mesa com valores diferentes (ex: 1, 3 , 5)
+	if(n <= 1) return n; 	
 	return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
