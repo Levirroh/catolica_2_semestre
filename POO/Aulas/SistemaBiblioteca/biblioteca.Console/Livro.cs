@@ -11,12 +11,22 @@ public class Livro
     // métodos
     public Livro(string cod, string tit, string aut, int ano, int pag)
     {
-        isbn = cod;
-        titulo = tit;
-        autor = aut;
-        anoPublicacao = ano;
-        paginas = pag;
+        this.isbn = cod;
+        this.titulo = tit;
+        this.autor = aut;
+        this.anoPublicacao = ano;
+        this.paginas = pag;
     }
+    //Method Overload
+    public Livro()
+    {
+        this.isbn = "";
+        this.titulo = "";
+        this.autor = "";
+        this.anoPublicacao = 0;
+        this.paginas = 0;
+    }
+
 
 
     public void ImprimirDados()
