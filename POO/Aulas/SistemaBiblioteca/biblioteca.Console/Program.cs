@@ -11,6 +11,18 @@ while (true)
 {
     tela.PrepararTela();
     opcao = tela.MostrarMenu(opcoes, 2, 2);
-
     Console.ReadKey();
+
+    switch (opcao)
+    {
+        case "1":
+
+        case "2":
+
+        case "3":
+            
+        case "0":
+            break;
+    }
+
 }
