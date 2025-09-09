@@ -8,6 +8,8 @@ public class Tela
     //
     private int largura;
     private int altura;
+    private int colunaInicial;
+    private int linhaInicial;
 
     //
     // métodos
@@ -16,16 +18,31 @@ public class Tela
     {
         this.largura = largura;
         this.altura = altura;
+        this.colunaInicial = 0;
+        this.linhaInicial = 0;
+    }
+    public Tela(int largura, int altura, int coluna, int linha)
+    {
+        this.largura = largura;
+        this.altura = altura;
+        this.colunaInicial = coluna;
+        this.linhaInicial = linha;
     }
 
-
-    public void PrepararTela()
+    public void PrepararTela(string titulo = "")
     {
         Console.BackgroundColor = ConsoleColor.Black;
         Console.ForegroundColor = ConsoleColor.Cyan;
         Console.Clear();
-        this.MontarMoldura(0, 0, this.largura, this.altura);
-        this.Centralizar(0, this.largura, 1, "Sistema de Biblioteca");
+        this.MontarMoldura(
+            this.colunaInicial,
+            this.linhaInicial,
+            this.colunaInicial + this.largura,
+            this.linhaInicial + this.altura);
+
+        this.Centralizar(this.colunaInicial,
+        this.colunaInicial + this.largura,
+        this.linhaInicial + 1, titulo);
     }
 
 
@@ -51,7 +68,7 @@ public class Tela
 
     public void Centralizar(int ci, int cf, int lin, string msg)
     {
-        int col = (cf - ci - msg.Length) / 2;
+        int col = (cf - ci - msg.Length) / 2 + ci;
         Console.SetCursorPosition(col, lin);
         Console.Write(msg);
     }

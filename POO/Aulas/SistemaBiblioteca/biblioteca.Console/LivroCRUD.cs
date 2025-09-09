@@ -11,7 +11,23 @@ public class LivroCRUD
     // métodos
     public LivroCRUD()
     {
+        //inicia a coleção de livros
         this.livros = new List<Livro>();
+        //inicializa o obj para manipulação dos dados de UM livro
         this.livro = new Livro();
+        //inicializa o ponteiro da coleção de lviros
+        this.id = -1;
     }
+
+    public void ExecutarCRUD()
+    {
+        //Montar tela do CRUD
+        Tela tela = new Tela(46, 9, 15, 10);
+        tela.PrepararTela("Cadastro de Livros");
+
+        Console.ReadKey();
+        //Escrever algoritmo do CRUD
+    }
+
+
 }
