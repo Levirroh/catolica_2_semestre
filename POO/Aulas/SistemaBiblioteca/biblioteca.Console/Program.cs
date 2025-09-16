@@ -26,5 +26,8 @@ while (true)
         case "0":
             break;
     }
-
+    if (opcao == "0")
+    {
+        return;
+    }
 }

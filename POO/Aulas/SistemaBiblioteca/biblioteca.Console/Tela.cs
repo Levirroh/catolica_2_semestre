@@ -33,7 +33,7 @@ public class Tela
     {
         Console.BackgroundColor = ConsoleColor.Black;
         Console.ForegroundColor = ConsoleColor.Cyan;
-        Console.Clear();
+        //Console.Clear();
         this.MontarMoldura(
             this.colunaInicial,
             this.linhaInicial,
@@ -73,10 +73,24 @@ public class Tela
         Console.Write(msg);
     }
 
+    public void ApagarArea(int ci, int li, int cf, int lf)
+    {
+        for (int coluna = ci; coluna <= cf; coluna++)
+        {
+            for (int linha = li; linha <= lf; linha++)
+            {
+                Console.SetCursorPosition(coluna, linha);
+                Console.Write(" ");
+            }
+        }
+    }
 
     public void MontarMoldura(int ci, int li, int cf, int lf)
     {
         int col, lin;
+
+        this.ApagarArea(ci, li, cf, lf);
+
         // desenha as linhas horizontais
         for (col = ci; col < cf; col++)
         {
@@ -111,5 +125,15 @@ public class Tela
 
         Console.SetCursorPosition(cf, lf);
         Console.Write("╝");
+    }
+
+    public void MontarTela(List<string> dados, int col, int lin)
+    {
+        for (int i = 0; i < dados.Count; i++)
+        {
+            Console.SetCursorPosition(col, lin);
+            Console.Write(dados[i]);
+            lin++;
+        }
     }
 }
