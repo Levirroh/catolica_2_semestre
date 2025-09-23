@@ -136,4 +136,9 @@ public class Tela
             lin++;
         }
     }
+    public void MostrarMensagem(int col, int lin, string msg)
+    {
+        Console.SetCursorPosition(col, lin);
+        Console.Write(msg);
+    }
 }
