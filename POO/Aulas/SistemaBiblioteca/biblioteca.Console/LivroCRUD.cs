@@ -32,6 +32,7 @@ public class LivroCRUD
 
     public void ExecutarCRUD()
     {
+        string resp; 
         //Montar tela do CRUD
         Tela tela = new Tela(46, 9, 15, 5);
         tela.PrepararTela("Cadastro de Livros");
@@ -49,11 +50,27 @@ public class LivroCRUD
 
         if (!achou)
         {
-            
+            tela.MostrarMensagem(this.colunaDados, this.linhaDados + 5, "ISBN não encontrado");
+            resp = tela.Perguntar(this.colunaDados, this.linhaDados + 6, "Deseja cadastrar este livro? (S/N) : ");
+
+            #region  Cadastrando Livro
+            if (resp.ToLower() == "s")
+            {
+                this.EntrarDados(2);
+                resp = tela.Perguntar(this.colunaDados, this.linhaDados + 6, "Confirma o cadastro do livro? (S/N) :");
+                if (resp.ToLower() == "s")
+                {
+                    this.livros.Add(
+                        new Livro(this.livro.isbn, this.livro.titulo, this.livro.autor, this.livro.anoPublicacao, this.livro.paginas)
+                    );
+                }
+            }
+            #endregion
         }
         else
         {
-            
+            Console.Write("--- ACHEI ---");
+            Console.ReadKey();
         }
 
         Console.ReadKey();

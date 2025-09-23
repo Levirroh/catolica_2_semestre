@@ -141,4 +141,12 @@ public class Tela
         Console.SetCursorPosition(col, lin);
         Console.Write(msg);
     }
+    public string Perguntar(int col, int lin, string pergunta)
+    {
+        string resp = "";
+        Console.SetCursorPosition(col, lin);
+        Console.Write(pergunta);
+        resp = Console.ReadLine();
+        return resp;
+    }
 }
