@@ -43,17 +43,61 @@ public class LivroCRUD
         this.linhaDados = 7;
 
         //CRUD
-        this.EntrarCodigo();
+        this.EntrarDados(1);
+        bool achou = this.ProcurarCodigo();
 
+
+        if (!achou)
+        {
+            
+        }
+        else
+        {
+            
+        }
 
         Console.ReadKey();
     }
 
-    public void EntrarCodigo()
+    public void EntrarDados(int qual)
     {
-        Console.SetCursorPosition(this.colunaDados, this.linhaDados);
-        this.livro.isbn = Console.ReadLine();
+        if (qual == 1)
+        {
+            Console.SetCursorPosition(this.colunaDados, this.linhaDados);
+            this.livro.isbn = Console.ReadLine();
+        }
+        else
+        {
+            Console.SetCursorPosition(this.colunaDados, this.linhaDados + 1);
+            this.livro.titulo = Console.ReadLine();
 
+            Console.SetCursorPosition(this.colunaDados, this.linhaDados + 2);
+            this.livro.autor = Console.ReadLine();
+
+            Console.SetCursorPosition(this.colunaDados, this.linhaDados + 3);
+            this.livro.anoPublicacao = int.Parse(Console.ReadLine());
+
+            Console.SetCursorPosition(this.colunaDados, this.linhaDados + 4);
+            this.livro.paginas = int.Parse(Console.ReadLine());
+
+        }
+
+    }
+
+    public bool ProcurarCodigo()
+    {
+        bool encontrei = false;
+
+        for (int i = 0; i < this.livros.Count; i++)
+        {
+            if (this.livro.isbn == this.livros[i].isbn)
+            {
+                encontrei = true;
+                this.id = i;
+                break;
+            }
+        }
+        return encontrei;
     }
 
 }
