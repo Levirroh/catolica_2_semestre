@@ -9,7 +9,7 @@ struct ELEMENTO{
 };
 
 main(){
-	ELEMENTO, *inicio, *fim, *auxiliar;
+	ELEMENTO *inicio, *fim, *auxiliar;
 	inicio = NULL;
 	fim = NULL;
 	auxiliar = NULL;
@@ -18,9 +18,9 @@ main(){
 	string nome;
 	
 	while(true){
-		system("cls")
+		system("cls");
 		cout << "---=== Fila ===---" << endl;
-		ciyt << "1 - Adicionar elemento" << endl;
+		cout << "1 - Adicionar elemento" << endl;
 		cout << "2 - Apagar elemento" << endl;
 		cout << "3 - Mostrar fila" << endl;
 		cout << "0 - Sair" << endl;
@@ -53,8 +53,28 @@ main(){
 			} else {
 				//se ja existe o elemento sera adicionar no fim da fila.
 				fim->proximo = auxiliar;
-				fim->auxiliar;
+				fim = auxiliar;
 			}
+		}
+		
+		if(op == 2){
+			auxiliar = inicio;
+			inicio = inicio->proximo;
+			
+			delete auxiliar;
+		}		
+		
+		if	(op == 3){
+			cout << endl << "--== Listagem da fila ==--" << endl;
+			
+			//posiciona no inicio da fila
+			
+			auxiliar = inicio;
+			while(auxiliar != NULL){
+				cout << auxiliar->nome << endl;
+				auxiliar = auxiliar->proximo;
+			}
+			system("pause");
 		}
 	}
 }
