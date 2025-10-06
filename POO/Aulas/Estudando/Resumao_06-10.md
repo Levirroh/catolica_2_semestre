@@ -205,34 +205,36 @@ Primeira linha do método (tipo + nome + parâmetros).
 
 📝 SIMULADO DE 10 QUESTÕES OBJETIVAS
 1. O que é uma classe em POO?
-✅ b) Um molde que define atributos e métodos.
 
 2. O que é um objeto?
-✅ c) Uma instância real de uma classe.
 
 3. O que é encapsulamento?
-✅ a) Técnica de esconder detalhes internos e proteger dados.
 
 4. Qual comando implementa o encapsulamento?
-✅ b) private
 
 5. A primeira linha de um método é chamada de:
-✅ b) Assinatura
 
 6. O que faz o construtor?
-✅ b) Inicializa atributos ao criar o objeto.
 
 7. Como se cria um objeto em Java?
-✅ b) new Pessoa();
 
 8. Sobre modificadores de acesso:
-✅ c) private protege atributos dentro da classe.
 
 9. Complete: “Encapsular é ______ os dados de uma classe.”
-✅ b) ocultar
 
 10. Em POO, “instanciar” significa:
-✅ c) Criar um objeto na memória.
+
+
+1 - Um molde que define atributos e métodos.
+2 - Uma instância real de uma classe.
+3 - Técnica de esconder detalhes internos e proteger dados.
+4 - private
+5 - Assinatura
+6 - Inicializa atributos ao criar o objeto.
+7 - new Pessoa();
+8 - private protege atributos dentro da classe.
+9 - ocultar
+10 - Criar um objeto na memória.
 
 🎯 REVISÃO FINAL — O QUE VER NA VÉSPERA
 ✅ Memorize:
