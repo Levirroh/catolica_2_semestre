@@ -1,4 +1,4 @@
-#include <siostream>
+#include <iostream>
 #include <string>
 
 using namespace std;
@@ -28,7 +28,7 @@ main()
 		cin >> op;		
 		
 		if(op == 0){
-			return;
+			break;
 		}
 		
 		if(op == 1){
@@ -40,6 +40,10 @@ main()
 			auxiliar = new ELEMENTO();
 			auxiliar->nome = nome;
 			auxiliar->proximo = NULL;
+			
+			//if(topo != NULL) auxiliar->proximo = topo
+			//topo = auxiliar;
+			
 			
 			if(topo == NULL){
 				topo = auxiliar;
@@ -62,7 +66,7 @@ main()
 			
 			auxiliar = topo;
 			
-			while (auxiliar->proximo != NULL){
+			while (auxiliar != NULL){
 				cout << auxiliar->nome << endl;
 				auxiliar = auxiliar->proximo;
 			}
