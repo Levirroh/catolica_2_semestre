@@ -42,12 +42,10 @@ main(){
 			auxiliar->nome = nome;
 			
 			if(inicio == NULL){
-				
 				inicio = auxiliar;
 				fim = inicio;
 				auxiliar->proximo = inicio;
-				
-			} else if(inicio == fim){
+			} else if(inicio == fim || auxiliar->nome > fim->nome || auxiliar->nome < fim->nome){
 				if(auxiliar->nome < inicio->nome){
 					inicio = auxiliar;
 					auxiliar->proximo = fim;
@@ -56,6 +54,20 @@ main(){
 					inicio->proximo = fim;	
 				}
 			} else {
+				//sor
+//				ELEMENTO ant = NULL;
+//				ELEMENTO atu = inicio;
+//				
+//				//faz um loop ate encontrar o espaco onde sera inserido o auxiliar
+//				while(auxiliar->nome > atu->nome){
+//					ant = atu;
+//					atu = atu->proximo;
+//				}
+//				
+//				ant->proximo = auxiliar;
+//				auxiliar->proximo = atu;
+				
+				//eu
 				anterior = inicio;
 				while(anterior->proximo != NULL){
 					if(anterior->proximo->nome > auxiliar->nome){
@@ -68,29 +80,44 @@ main(){
 					}
 				}
 			}
-			
-//			
-//			if(onde == "I") {
-//				if(inicio == NULL) {
-//					inicio = auxiliar;
-//					fim = inicio;
-//				} else {
-//					auxiliar->proximo = inicio;
-//					inicio = auxiliar;
-//				}
-//			} else 
-//			{
-//				if(fim == NULL) {
-//					inicio = auxiliar;
-//					fim = inicio;
-//				} else {
-//					
-//				}
-//			}
 		}
-		
-		
+		if (op == 2)
+		{
+			cout << endl << "--== Excluir ==--" << endl;
+			cout << "Onde excluir (I/F) : " << endl;
+			cin >> onde;
+	
+			if(onde == "I")
+			{
+				auxiliar = inicio;
+				inicio = inicio->proximo;
+	
+				delete auxiliar;
+			}
+	
+			if (onde == "F")
+			{
+				auxiliar = inicio;
+				while(auxiliar->proximo->proximo != NULL) {
+					auxiliar = auxiliar->proximo;
+				}
+				delete fim;
+				fim = auxiliar;
+				fim->proximo = NULL;
+			}
+		}
+	
+	
+	
+		if (op == 3)
+		{
+			cout << endl << "--== Listagem da lista ==--" << endl;
+			auxiliar = inicio;
+			while(auxiliar != NULL) {
+				cout << auxiliar->nome << endl;
+				auxiliar = auxiliar->proximo;
+			}
+			system("pause");
+		}
 	}
-
-
 }
