@@ -49,8 +49,8 @@ main(){
 				
 			} else if(inicio == fim){
 				if(auxiliar->nome < inicio->nome){
-					auxiliar->proximo = inicio;
 					inicio = auxiliar;
+					auxiliar->proximo = fim;
 				} else {
 					fim = auxiliar;
 					inicio->proximo = fim;	
@@ -58,7 +58,14 @@ main(){
 			} else {
 				anterior = inicio;
 				while(anterior->proximo != NULL){
-					if()
+					if(anterior->proximo->nome > auxiliar->nome){
+						
+						auxiliar->proximo = anterior->proximo;
+						anterior->proximo = auxiliar;
+						
+					} else {
+						anterior = anterior->proximo;					
+					}
 				}
 			}
 			
