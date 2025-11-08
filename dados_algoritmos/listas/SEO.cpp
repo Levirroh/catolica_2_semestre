@@ -7,11 +7,10 @@ struct ELEMENTO
 {
 	string nome;
 	ELEMENTO *proximo;
-	ELEMENTO *anterior;
 };
 
 main(){
-	ELEMENTO *inicio, *fim, *auxiliar;
+	ELEMENTO *inicio, *fim, *anterior, *auxiliar;
 	inicio = NULL;
 	fim = NULL;
 	auxiliar = NULL;
@@ -38,33 +37,49 @@ main(){
 			cout << endl << "--== Adicionar ==--" << endl;
 			cout << "Informe o nome : ";
 			cin >> nome;
-			cout << "Onde incluir (I/F) : " << endl;
-			cin >> onde;
 			
 			auxiliar = new ELEMENTO();
 			auxiliar->nome = nome;
 			
-			
-			if(onde == "I") {
-				if(inicio == NULL) {
-					inicio = auxiliar;
-					fim = inicio;
-					fim->anterior = inicio;
-				} else {
-					inicio->anterior = auxiliar;
+			if(inicio == NULL){
+				
+				inicio = auxiliar;
+				fim = inicio;
+				auxiliar->proximo = inicio;
+				
+			} else if(inicio == fim){
+				if(auxiliar->nome < inicio->nome){
 					auxiliar->proximo = inicio;
 					inicio = auxiliar;
-				}
-			} else 
-			{
-				if(fim == NULL) {
-					inicio = auxiliar;
-					fim = inicio;
 				} else {
-					fim->proximo = auxiliar;
 					fim = auxiliar;
+					inicio->proximo = fim;	
+				}
+			} else {
+				anterior = inicio;
+				while(anterior->proximo != NULL){
+					if()
 				}
 			}
+			
+//			
+//			if(onde == "I") {
+//				if(inicio == NULL) {
+//					inicio = auxiliar;
+//					fim = inicio;
+//				} else {
+//					auxiliar->proximo = inicio;
+//					inicio = auxiliar;
+//				}
+//			} else 
+//			{
+//				if(fim == NULL) {
+//					inicio = auxiliar;
+//					fim = inicio;
+//				} else {
+//					
+//				}
+//			}
 		}
 		
 		
