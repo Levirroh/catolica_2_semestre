@@ -55,19 +55,23 @@ main(){
 				}
 			} else {
 				//sor
-//				ELEMENTO ant = NULL;
-//				ELEMENTO atu = inicio;
-//				
-//				//faz um loop ate encontrar o espaco onde sera inserido o auxiliar
-//				while(auxiliar->nome > atu->nome){
-//					ant = atu;
-//					atu = atu->proximo;
-//				}
-//				
-//				ant->proximo = auxiliar;
-//				auxiliar->proximo = atu;
+				/*
+				ELEMENTO *ant = NULL;
+				ELEMENTO *atu = inicio;
 				
+				//faz um loop ate encontrar o espaco onde sera inserido o auxiliar
+				while(auxiliar->nome > atu->nome){
+					ant = atu;
+					atu = atu->proximo;
+				}
+				
+				ant->proximo = auxiliar;
+				auxiliar->proximo = atu;
+				*/			
+					
 				//eu
+				
+				/*
 				anterior = inicio;
 				while(anterior->proximo != NULL){
 					if(anterior->proximo->nome > auxiliar->nome){
@@ -79,6 +83,7 @@ main(){
 						anterior = anterior->proximo;					
 					}
 				}
+				*/
 			}
 		}
 		if (op == 2)
@@ -113,9 +118,14 @@ main(){
 		{
 			cout << endl << "--== Listagem da lista ==--" << endl;
 			auxiliar = inicio;
-			while(auxiliar != NULL) {
+			if(fim == inicio){
 				cout << auxiliar->nome << endl;
-				auxiliar = auxiliar->proximo;
+				
+			} else {
+				while(auxiliar != NULL) {
+					cout << auxiliar->nome << endl;
+					auxiliar = auxiliar->proximo;
+				}
 			}
 			system("pause");
 		}
