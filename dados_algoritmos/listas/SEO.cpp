@@ -83,6 +83,10 @@ main(){
 						anterior = anterior->proximo;					
 					}
 				}
+				if (anterior->proximo == NULL) {
+				    anterior->proximo = auxiliar;
+				    auxiliar->proximo = NULL;
+				}
 				*/
 			}
 		}
