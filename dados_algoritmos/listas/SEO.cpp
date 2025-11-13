@@ -78,7 +78,7 @@ main(){
 						
 						auxiliar->proximo = anterior->proximo;
 						anterior->proximo = auxiliar;
-						
+						break;
 					} else {
 						anterior = anterior->proximo;					
 					}
