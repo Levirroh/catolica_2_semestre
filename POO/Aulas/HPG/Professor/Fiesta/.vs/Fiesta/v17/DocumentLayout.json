@@ -1,0 +1,75 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FD0C073B-96A1-47C4-92E6-19F3ECA7A63B}|Fiesta.csproj|D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\clientecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD0C073B-96A1-47C4-92E6-19F3ECA7A63B}|Fiesta.csproj|solutionrelative:clientecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD0C073B-96A1-47C4-92E6-19F3ECA7A63B}|Fiesta.csproj|d:\\- trabalho\\cat\u00F3lica 2025-1\\3 - 2a poo\\aula 16 - 10-06 - exerc\u00EDcios\\fiesta\\temacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD0C073B-96A1-47C4-92E6-19F3ECA7A63B}|Fiesta.csproj|solutionrelative:temacrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FD0C073B-96A1-47C4-92E6-19F3ECA7A63B}|Fiesta.csproj|D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\basecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FD0C073B-96A1-47C4-92E6-19F3ECA7A63B}|Fiesta.csproj|solutionrelative:basecrud.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseCRUD.cs",
+              "DocumentMoniker": "D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\BaseCRUD.cs",
+              "RelativeDocumentMoniker": "BaseCRUD.cs",
+              "ToolTip": "D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\BaseCRUD.cs",
+              "RelativeToolTip": "BaseCRUD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T14:40:23.808Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ClienteCRUD.cs",
+              "DocumentMoniker": "D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\ClienteCRUD.cs",
+              "RelativeDocumentMoniker": "ClienteCRUD.cs",
+              "ToolTip": "D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\ClienteCRUD.cs",
+              "RelativeToolTip": "ClienteCRUD.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAowAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T14:44:50.425Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TemaCRUD.cs",
+              "DocumentMoniker": "D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\TemaCRUD.cs",
+              "RelativeDocumentMoniker": "TemaCRUD.cs",
+              "ToolTip": "D:\\- Trabalho\\Cat\u00F3lica 2025-1\\3 - 2A POO\\Aula 16 - 10-06 - Exerc\u00EDcios\\Fiesta\\TemaCRUD.cs",
+              "RelativeToolTip": "TemaCRUD.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-17T14:37:47.938Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

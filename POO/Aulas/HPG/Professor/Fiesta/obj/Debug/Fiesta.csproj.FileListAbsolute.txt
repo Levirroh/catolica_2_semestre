@@ -1,0 +1,21 @@
+C:\Users\paulo.manseira\Desktop\Projetos\Fiesta\bin\Debug\Fiesta.exe.config
+C:\Users\paulo.manseira\Desktop\Projetos\Fiesta\bin\Debug\Fiesta.exe
+C:\Users\paulo.manseira\Desktop\Projetos\Fiesta\bin\Debug\Fiesta.pdb
+C:\Users\paulo.manseira\Desktop\Projetos\Fiesta\obj\Debug\Fiesta.csproj.AssemblyReference.cache
+C:\Users\paulo.manseira\Desktop\Projetos\Fiesta\obj\Debug\Fiesta.csproj.CoreCompileInputs.cache
+C:\Users\paulo.manseira\Desktop\Projetos\Fiesta\obj\Debug\Fiesta.exe
+C:\Users\paulo.manseira\Desktop\Projetos\Fiesta\obj\Debug\Fiesta.pdb
+C:\Users\paulo.manseira\Desktop\Fiesta\bin\Debug\Fiesta.exe.config
+C:\Users\paulo.manseira\Desktop\Fiesta\bin\Debug\Fiesta.exe
+C:\Users\paulo.manseira\Desktop\Fiesta\bin\Debug\Fiesta.pdb
+C:\Users\paulo.manseira\Desktop\Fiesta\obj\Debug\Fiesta.csproj.AssemblyReference.cache
+C:\Users\paulo.manseira\Desktop\Fiesta\obj\Debug\Fiesta.csproj.CoreCompileInputs.cache
+C:\Users\paulo.manseira\Desktop\Fiesta\obj\Debug\Fiesta.exe
+C:\Users\paulo.manseira\Desktop\Fiesta\obj\Debug\Fiesta.pdb
+D:\- Trabalho\Católica 2025-1\3 - 2A POO\Aula 16 - 10-06 - Exercícios\Fiesta\obj\Debug\Fiesta.csproj.AssemblyReference.cache
+D:\- Trabalho\Católica 2025-1\3 - 2A POO\Aula 16 - 10-06 - Exercícios\Fiesta\obj\Debug\Fiesta.csproj.CoreCompileInputs.cache
+D:\- Trabalho\Católica 2025-1\3 - 2A POO\Aula 16 - 10-06 - Exercícios\Fiesta\obj\Debug\Fiesta.exe
+D:\- Trabalho\Católica 2025-1\3 - 2A POO\Aula 16 - 10-06 - Exercícios\Fiesta\obj\Debug\Fiesta.pdb
+D:\- Trabalho\Católica 2025-1\3 - 2A POO\Aula 16 - 10-06 - Exercícios\Fiesta\bin\Debug\Fiesta.exe.config
+D:\- Trabalho\Católica 2025-1\3 - 2A POO\Aula 16 - 10-06 - Exercícios\Fiesta\bin\Debug\Fiesta.exe
+D:\- Trabalho\Católica 2025-1\3 - 2A POO\Aula 16 - 10-06 - Exercícios\Fiesta\bin\Debug\Fiesta.pdb

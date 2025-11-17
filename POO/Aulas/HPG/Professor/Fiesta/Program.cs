@@ -1,0 +1,65 @@
+﻿/*
+*  Sistema de aluguel para festas
+*  Fiesta!!!
+*/
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Fiesta
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            List<string> opcoes = new List<string>();
+            opcoes.Add("1 - Manter Clientes");
+            opcoes.Add("2 - Manter Temas");
+            opcoes.Add("3 - Registrar Aluguel");
+            opcoes.Add("4 - Registrar Devolução");
+            opcoes.Add("5 - Listar Aluguéis");
+            opcoes.Add("0 - Sair");
+
+            Tela tela = new Tela(80, 25, ConsoleColor.Black, ConsoleColor.White);
+            ClienteCRUD clienteCRUD = new ClienteCRUD();
+            TemaCRUD temaCRUD = new TemaCRUD();
+            AluguelCRUD aluguelCRUD = new AluguelCRUD(clienteCRUD, temaCRUD);
+            string opcao;
+
+
+            while (true)
+            {
+                tela.prepararTela("Fiesta!!!");
+                opcao = tela.mostrarMenu(opcoes, 1, 2);
+                switch (opcao)
+                {
+                    case "1":
+                        clienteCRUD.ExecutarCRUD();
+                        break;
+                    case "2":
+                        temaCRUD.ExecutarCRUD();
+                        break;
+                    case "3":
+                        aluguelCRUD.RegistrarAluguel();
+                        break;
+                    case "4":
+                        aluguelCRUD.RegistrarDevolucao();
+                        break;
+                    case "5":
+                        aluguelCRUD.MostrarRelatorio();
+                        break;
+                    case "0":
+                        Console.WriteLine("Saindo...");
+                        return;
+                    default:
+                        Console.WriteLine("Opção inválida!");
+                        break;
+                }
+            }
+        }
+    }
+}

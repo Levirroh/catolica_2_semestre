@@ -1,0 +1,14 @@
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\bin\Debug\net9.0\BancoConsole.exe
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\bin\Debug\net9.0\BancoConsole.deps.json
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\bin\Debug\net9.0\BancoConsole.runtimeconfig.json
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\bin\Debug\net9.0\BancoConsole.dll
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\bin\Debug\net9.0\BancoConsole.pdb
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\BancoConsole.GeneratedMSBuildEditorConfig.editorconfig
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\BancoConsole.AssemblyInfoInputs.cache
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\BancoConsole.AssemblyInfo.cs
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\BancoConsole.csproj.CoreCompileInputs.cache
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\BancoConsole.dll
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\refint\BancoConsole.dll
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\BancoConsole.pdb
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\BancoConsole.genruntimeconfig.cache
+E:\DevProjects\Code-Console\SistemaBanco\BancoConsole\obj\Debug\net9.0\ref\BancoConsole.dll

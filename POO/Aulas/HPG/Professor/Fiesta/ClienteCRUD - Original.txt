@@ -1,0 +1,256 @@
+using System;
+using System.Collections.Generic;
+
+public class ClienteCRUD
+{
+    // atributos
+    private List<ClienteDTO> listaClientes;  // "Banco de dados"
+    private ClienteDTO cliente;              // Cliente "da vez"
+    private Tela tela;
+    private int linha, coluna;               // Linha e coluna da tela para desenhar a moldura
+    private int linhaEntrada, colunaEntrada; // Linha e coluna inicial para entrada de dados
+    private int larguraTotal, larguraDados;  // Largura total da tela e largura dos dados
+    private int posicao;
+    private List<string> campos;             // Lista de rótulos dos campos
+
+    public ClienteCRUD()
+    {
+        this.listaClientes = new List<ClienteDTO>();
+        this.tela = new Tela();
+        this.campos = new List<string> { 
+            "Código   :", 
+            "Nome     :", 
+            "Email    :", 
+            "Telefone :" };
+        this.larguraTotal = 38; // Define e largura da janela
+        this.larguraDados = this.larguraTotal - this.campos[0].Length;
+        this.coluna = 20;
+        this.linha = 10;
+    }
+
+    public void executarCRUD()
+    {
+        while (true)
+        {
+            // 1 - montar a tela do CRUD  
+            this.montarTelaCliente(this.coluna,this.linha);
+
+            // preparar um registro em branco de cliente
+            this.cliente = new ClienteDTO();
+
+            // 2 - perguntar ao usuario o código do cliente
+            this.tela.centralizar("Deixe o campo vazio para sair.");
+            this.entrarDados(1);
+            if (this.cliente.Codigo == 0) break;
+
+            // 3 - procurar pela chave no "banco de dados" (listaClientes)
+            bool achou = this.buscarCodigo();
+
+            // 4 - Se não achou a chave no banco de dados
+            if (!achou)
+            {
+                // 4.1 - informar que não achou
+                this.tela.centralizar(
+                    "Cliente não encontrado. Deseja cadastrar (S/N): ",
+                    24, 0, 80);
+
+                // 4.2 - perguntar se deseja cadastrar
+                string resp = Console.ReadLine();
+
+                // 4.3 - se o usuário informar que deseja cadastrar
+                if (resp.ToLower()=="s")
+                {
+                    // 4.3.1 - perguntar os dados restantes ao usuário
+                    this.entrarDados(2);
+
+                    // 4.3.2 - perguntar se o usuário confirma o cadastro
+                    this.tela.centralizar("Confirma cadastro (S/N) : ");
+                    resp = Console.ReadLine();
+
+                    // 4.3.3 - se o usuário confirmar
+                    if (resp.ToLower() == "s")
+                    {
+                        // 4.3.3.1 - realizar a inclusão do novo cliente
+                        this.incluirRegistro();
+                    }
+
+
+                }
+
+            }
+            // 5 - se achou a chave no banco de dados
+            else
+            {
+                // 5.1 - mostrar os dados na tela
+                this.mostrarDados();
+
+                // 5.2 - perguntar ao usuário se deseja voltar, alterar ou excluir
+                this.tela.centralizar("Deseja Voltar/Alterar/Excluir (V/A/E) : ");
+                string resp = Console.ReadLine();
+
+                // 5.3 - se o usuario informou que deseja alterar
+                if (resp.ToLower() == "a") 
+                {
+                    // 5.3.1 - pergunta os novos dados para o usuário
+                    this.tela.centralizar("Digite apenas o dado que deseja alterar");
+                    this.entrarDados(2);
+
+                    // 5.3.2 - pergunta se o usuário confirma a alteração
+                    this.tela.centralizar("Confirma alteração (S/N) : ");
+                    resp = Console.ReadLine();
+
+                    // 5.3.3 - se o usuário confirmou a alteração
+                    if (resp.ToLower()=="s")
+                    {
+                        // 5.3.3.1 - gravar a alteração dos dados do cliente
+                        this.alterarRegistro();
+                    }
+                }
+
+                //5.4 - se o usuario informou que deseja excluir
+                if (resp.ToLower() == "e")
+                {
+                    // 5.4.1 - pergunta se o usuario confirma a exclusao
+                    this.tela.centralizar("Confirma exclusão (S/N) : ");
+                    resp = Console.ReadLine();
+
+                    // 5.4.2 - se o usuario confirmou exclusao
+                    if (resp.ToLower()=="s")
+                    {
+                        // 5.4.2.1 - excluir cliente
+                        this.excluirRegistro();
+                    }
+                }
+            }
+        }
+    }
+
+
+    private bool buscarCodigo()
+    {
+        bool encontrei = false;
+        for(int i=0; i<this.listaClientes.Count; i++)
+        {
+            if (this.listaClientes[i].Codigo == this.cliente.Codigo)
+            {
+                encontrei = true;
+                this.posicao = i;
+                break;
+            }
+        }
+        return encontrei;
+    }
+
+
+    private void incluirRegistro()
+    {
+        this.listaClientes.Add(this.cliente);
+    }
+
+
+    private void alterarRegistro()
+    {
+        if (this.cliente.Nome != "") 
+            this.listaClientes[this.posicao].Nome = this.cliente.Nome;
+        if (this.cliente.Email != "")
+            this.listaClientes[this.posicao].Email = this.cliente.Email;
+        if (this.cliente.Telefone != "")
+            this.listaClientes[this.posicao].Telefone = this.cliente.Telefone;
+    }
+
+
+    private void excluirRegistro()
+    {
+        this.listaClientes.RemoveAt(this.posicao);
+    }
+
+
+    private void mostrarDados()
+    {
+        Console.SetCursorPosition(colunaEntrada, linhaEntrada+1);
+        Console.Write(this.listaClientes[this.posicao].Nome);
+
+        Console.SetCursorPosition(colunaEntrada, linhaEntrada+2);
+        Console.Write(this.listaClientes[this.posicao].Email);
+
+        Console.SetCursorPosition(colunaEntrada, linhaEntrada+3);
+        Console.Write(this.listaClientes[this.posicao].Telefone);
+    }
+
+
+
+    private void entrarDados(int qual)
+    {
+        string entrada;
+
+        // entrada de código (chave primária / identificador único)
+        if (qual == 1)
+        {
+            Console.SetCursorPosition(colunaEntrada, linhaEntrada);
+            // this.cliente.Codigo = int.Parse(Console.ReadLine());
+            entrada = Console.ReadLine();
+            if (entrada.Length > 0) this.cliente.Codigo = int.Parse(entrada);
+        }
+
+        // entrada de dados do registro
+        if (qual == 2)
+        {
+            this.tela.limparArea(colunaEntrada, linhaEntrada+1, colunaEntrada+25, linhaEntrada+3);
+
+            // Entrada para Nome, Email e Telefone
+            for (int i = 1; i < campos.Count; i++) // Começa do índice 1 para pular Código
+            {
+                Console.SetCursorPosition(colunaEntrada, linhaEntrada + i);
+                entrada = Console.ReadLine();
+                // Atribuir entrada ao campo correspondente
+                switch (i)
+                {
+                    case 1:
+                        this.cliente.Nome = entrada;
+                        break;
+                    case 2:
+                        this.cliente.Email = entrada;
+                        break;
+                    case 3:
+                        this.cliente.Telefone = entrada;
+                        break;
+                }
+            }
+        }
+    }
+
+
+
+    
+    private void montarTelaCliente(int coluna, int linha)
+    {
+        // Definir dimensões da moldura
+        int coluna2 = coluna + this.larguraTotal;
+        int linha2 = linha + campos.Count + 2; // +2 para título e borda
+
+        // Desenhar moldura
+        this.tela.desenharMoldura(coluna, linha, coluna2, linha2);
+
+        // Exibir título
+        linha++;
+        this.tela.centralizar("Cadastro de Cliente", linha, coluna, coluna2);
+
+        // Exibir rótulos dos campos
+        coluna++;
+        linha++;
+        this.colunaEntrada = coluna + 1 + campos[0].Length; // Define posição para entrada de dados
+        this.linhaEntrada = linha;                          // Define linha inicial para entrada de dados
+        for (int i = 0; i < campos.Count; i++)
+        {
+            Console.SetCursorPosition(coluna, linha + i);
+            Console.Write(campos[i]);
+        }
+    }
+
+
+    public List<ClienteDTO> ObterListaClientes()
+    {
+        return this.listaClientes;
+    }
+
+}
