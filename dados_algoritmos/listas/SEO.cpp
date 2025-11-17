@@ -78,10 +78,14 @@ main(){
 						
 						auxiliar->proximo = anterior->proximo;
 						anterior->proximo = auxiliar;
-						
+						break;
 					} else {
 						anterior = anterior->proximo;					
 					}
+				}
+				if (anterior->proximo == NULL) {
+				    anterior->proximo = auxiliar;
+				    auxiliar->proximo = NULL;
 				}
 				*/
 			}
