@@ -75,3 +75,16 @@ Métodos:
         Outros métodos possuem tipo, este é nomeado no fim da função, neste caso 'void'.
 
 
+
+
+
+HPG:
+
+Exemplo:
+  Uma classe chamada BaseCRUD é genérica ou generalizada (será herdada).
+  Outras classes irão usar ela como herança.
+  As classes que herdam, são chamadas de classes especializadas.
+
+  Ou seja, uma classe será a classe pai/mãe ou filho/filha.
+
+
